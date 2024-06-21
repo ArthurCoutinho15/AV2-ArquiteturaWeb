@@ -1,6 +1,8 @@
 <h1>AV2 JWT Security REST API</h1>
-<p>Este projeto é uma API REST que utiliza autenticação e autorização baseada em JSON Web Tokens (JWT). Ele permite o registro de usuários, autenticação e restrição de acesso a determinadas rotas com base nas roles dos usuários (ADMIN e USER).
+<p>Este projeto é uma API REST que utiliza autenticação e autorização baseada em JSON Web Tokens (JWT). Ele permite o registro de usuários, autenticação e restrição de acesso a determinadas rotas com base nas roles dos usuários (ADMIN e MANAGER).
+  Eistem rotas para os admins gerenciarem os usuários e rotas para o gerente cadastrar produtos
 </p>
+<p>Antes de iniciar o projeto crie um banco UserBD com duas coloeções users e products no MongoDB</p>
 
 <h1>Estrutura do Projeto</h1>
 
