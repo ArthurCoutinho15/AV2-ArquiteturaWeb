@@ -108,7 +108,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Permissões: Público</li>
   <li>Descrição: Retorna os detalhes de um usuário pelo username.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Username.png?raw=true" width="800px" height="260px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/user.PNG?raw=true" width="800px" height="260px"/>
 <p>Para as rotas de edição e exclusão é necessário entrar na aba de Auth types do insomnia e selecionar Basic Auth e inserir o usuário e senha </p>
 <img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Authorization.png?raw=true" width="800px" height="260px"/>
 <h3>Editar Usuário</h3>
