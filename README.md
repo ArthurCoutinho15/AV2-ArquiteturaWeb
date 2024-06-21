@@ -88,23 +88,23 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 <h3>Registro de Usuário</h3>
 <ul>
   <li>Método: POST</li>
-  <li>URL: http://localhost:8080/auth/register</li>
+  <li>URL: http://localhost:8080/auth/admin/register</li>
   <li>Permissões: Público</li>
   <li>Descrição: Registra um novo usuário.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Register.png?raw=true" width="800px" height="260px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/adminRegister.PNG?raw=true" width="800px" height="260px"/>
 <h3>Login</h3>
 <ul>
   <li>Método: POST</li>
-  <li>URL: http://localhost:8080/auth/login</li>
+  <li>URL: http://localhost:8080/auth/admin/login</li>
   <li>Permissões: Público</li>
   <li>Descrição: Autentica um usuário e retorna um token JWT.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Login.png?raw=true" width="800px" height="260px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/loginRegister.PNG?raw=true" width="800px" height="260px"/>
 <h3>Obter Usuário por Username</h3>
 <ul>
   <li>Método: GET</li>
-  <li>URL: http://localhost:8080/auth/user/{username}</li>
+  <li>URL: http://localhost:8080/auth/admin/user/{username}</li>
   <li>Permissões: Público</li>
   <li>Descrição: Retorna os detalhes de um usuário pelo username.</li>
 </ul>
