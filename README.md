@@ -36,6 +36,13 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.controller
 <p>Modelo de dados para requisições de login e registro de usuários.</p> 
 <p>
 Classe: AuthController
+</p>
+
+  
+<h2>3. ProductRequest</h2> 
+<p>Modelo de dados para requisições de login e registro de produtos</p> 
+<p>
+Classe: ProductRequest
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 </p>
 
@@ -128,7 +135,15 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
   <li>Descrição: Deleta um usuário pelo ID.</li>
 </ul>
 <img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Captura%20de%20tela%202024-06-19%20165946.png?raw=true" width="800px" height="260px"/>
-
+<h2>Rotas Produto</h2>
+<h3>Registro de Produto</h3>
+<ul>
+  <li>Método: POST</li>
+  <li>URL: http://localhost:8080/auth/manager/register</li>
+  <li>Permissões: Público</li>
+  <li>Descrição: Registra um novo produto</li>
+</ul>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/productRegister.PNG?raw=true" width="800px" height="260px"/>
 
 Restrições de Roles
 ADMIN: Tem acesso a todas as rotas, incluindo edição (/auth/edit/{id}) e exclusão (/auth/delete/{id}) de usuários.
