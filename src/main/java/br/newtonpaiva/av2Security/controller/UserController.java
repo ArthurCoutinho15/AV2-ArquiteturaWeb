@@ -1,6 +1,7 @@
 package br.newtonpaiva.av2Security.controller;
 
 
+import br.newtonpaiva.av2Security.model.ProductsRequest;
 import br.newtonpaiva.av2Security.model.UserRequest;
 import br.newtonpaiva.av2Security.service.UserService;
 
@@ -16,13 +17,19 @@ public class UserController {
     @Autowired
     private UserService authService;
 
-    @PostMapping("/register")
+    @PostMapping("/admin/register")
     public ResponseEntity<?> register(@RequestBody UserRequest user) {
         authService.saveUser(user);
         return ResponseEntity.ok("User registered successfully");
     }
 
-    @PostMapping("/login")
+    @PostMapping("/manager/register")
+    public ResponseEntity<?> registerProduct(@RequestBody ProductsRequest products) {
+        authService.saveProduct(products);
+        return ResponseEntity.ok("Products registered successfully");
+    }
+
+    @PostMapping("/admin/login")
     public ResponseEntity<?> login(@RequestBody UserRequest loginRequest) {
         String token = authService.authenticateUser(loginRequest.getUsername(), loginRequest.getPassword());
         if (token != null) {
@@ -31,7 +38,7 @@ public class UserController {
         return ResponseEntity.status(401).body("Invalid credentials");
     }
 
-    @GetMapping("/user/{username}")
+    @GetMapping("/admin/user/{username}")
     public ResponseEntity<?> getUserByUsername(@PathVariable String username) {
         UserRequest user = authService.findByUsername(username);
         if (user != null) {
@@ -40,7 +47,7 @@ public class UserController {
         return ResponseEntity.status(404).body("User not found");
     }
     @Secured("ADMIN")
-    @PutMapping("/edit/{id}")
+    @PutMapping("/admin/edit/{id}")
     public ResponseEntity<?> editUser(@PathVariable String id, @RequestBody UserRequest user) {
         boolean isUpdated = authService.updateUser(id, user);
         if (isUpdated) {
@@ -50,7 +57,7 @@ public class UserController {
     }
 
     @Secured("ADMIN")
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/admin/delete/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable String id) {
         boolean isDeleted = authService.deleteUser(id);
         if (isDeleted) {

@@ -19,8 +19,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 public class UserConfig {
-
-
     @Autowired
     private CustomUserDetailService userDetailsService;
 
@@ -29,10 +27,11 @@ public class UserConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeRequests(authorize -> authorize
-                        .antMatchers(HttpMethod.POST, "/auth/register").permitAll()
-                        .antMatchers(HttpMethod.POST, "/auth/login").permitAll()
+                        .antMatchers(HttpMethod.POST, "/auth/manager/products").hasRole("MANAGER")
+                        .antMatchers(HttpMethod.POST, "/auth/admin/register").permitAll()
+                        .antMatchers(HttpMethod.POST, "/auth/admin/login").permitAll()
                         .antMatchers(HttpMethod.GET, "/auth/username/**").permitAll()
-                        .antMatchers(HttpMethod.GET, "/auth/user/**").permitAll()
+                        .antMatchers(HttpMethod.GET, "/auth/admin/user/**").permitAll()
                         .antMatchers("/auth/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )

@@ -1,6 +1,8 @@
 package br.newtonpaiva.av2Security.service;
 
+import br.newtonpaiva.av2Security.model.ProductsRequest;
 import br.newtonpaiva.av2Security.model.UserRequest;
+import br.newtonpaiva.av2Security.repository.ProductRepository;
 import br.newtonpaiva.av2Security.repository.UserRepository;
 import br.newtonpaiva.av2Security.security.JwtUtil;
 
@@ -12,6 +14,10 @@ import org.springframework.stereotype.Service;
 public class UserService {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ProductRepository productRepository;
+
+
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -39,6 +45,11 @@ public class UserService {
     public void saveUser(UserRequest user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
+    }
+
+    public void saveProduct(ProductsRequest product) {
+
+        productRepository.save(product);
     }
 
     public UserRequest findByUsername(String username) {
