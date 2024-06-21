@@ -154,7 +154,7 @@ ADMIN: Tem acesso a todas as rotas, incluindo edição (/auth/edit/{id}) e exclu
 USER: Acesso limitado apenas às rotas públicas e suas próprias informações.
 
 <h1>Diagrama</h1>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Captura%20de%20tela%202024-06-19%20174954.png?raw=true" width="1335px" height="724px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/diagrama.PNG?raw=true" width="1335px" height="724px"/>
 
 
 
