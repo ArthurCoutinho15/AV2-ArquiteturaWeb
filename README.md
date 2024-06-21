@@ -114,11 +114,11 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.service
 <h3>Editar Usuário</h3>
 <ul>
   <li>Método: PUT</li>
-  <li>URL: http://localhost:8080/auth/edit/{id}</li>
+  <li>URL: http://localhost:8080/auth/admin/edit/{id}</li>
   <li>Permissões: Admin</li>
-  <li>Descrição: Edita os detalhes de um usuário.</li>
+  <li>Descrição: Edita as informações de um usuário.</li>
 </ul>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/Update.png?raw=true" width="800px" height="260px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/userEdit.PNG?raw=true" width="800px" height="260px"/>
 <h3>Deletar Usuário</h3>
 <p>Para essa rota é necessário entrar na aba de Auth types do insomnia e selecionar API key </p>
 <ul>
