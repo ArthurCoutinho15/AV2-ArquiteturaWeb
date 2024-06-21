@@ -10,7 +10,7 @@
 Classe: AuthConfig
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.config
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/AuthCOnfig.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/Config.PNG?raw=true" width="800px" height="600px"/>
 <h2>Principais Métodos:</h2>
   <ul>
     <li>securityFilterChain(HttpSecurity http): Configura a segurança HTTP, definindo as permissões das rotas.</li>
@@ -24,7 +24,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.config
 Classe: AuthController
 Pacote: br.newtonpaiva.JWT_Security_RESTAPI.controller
 </p>
-<img src="https://github.com/ArthurCoutinho15/Security_RestAPI/blob/master/imagens/AuthController.png?raw=true" width="800px" height="600px"/>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/controller.PNG?raw=true" width="800px" height="600px"/>
 <h2>Principais Métodos:</h2>
   <ul>
     <li>register(LoginRequest user): Registra um novo usuário.</li>
