@@ -43,8 +43,9 @@ Classe: AuthController
 <p>Modelo de dados para requisições de login e registro de produtos</p> 
 <p>
 Classe: ProductRequest
-Pacote: br.newtonpaiva.JWT_Security_RESTAPI.model
 </p>
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/productsRequests.PNG?raw=true" width="720px" height="280px"/>
+
 
 <h2>4. AuthRepository</h2> 
 <p>Repositório para interagir com o banco de dados MongoDB.</p> 
