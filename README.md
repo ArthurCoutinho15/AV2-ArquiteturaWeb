@@ -38,6 +38,7 @@ Pacote: br.newtonpaiva.JWT_Security_RESTAPI.controller
 Classe: AuthController
 </p>
 
+<img src="https://github.com/ArthurCoutinho15/AV2-ArquiteturaWeb/blob/master/img/userRequest.PNG?raw=true" width="720px" height="280px"/>
   
 <h2>3. ProductRequest</h2> 
 <p>Modelo de dados para requisições de login e registro de produtos</p> 
